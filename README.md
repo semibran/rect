@@ -29,7 +29,7 @@ Determines if the given rectangles `a` and `b` are intersecting.
 ```javascript
 Rect.merge(...rects)
 ```
-Finds the smallest possible rectangle that can fit all the provided `rects`
+Finds the smallest possible rectangle that can fit all the provided `rects`.
 
 ### Properties
 For convenience, each `Rect` instance has its own `get` and `set` fields for the properties `x` and `y` (for getting and setting the rectangle center) as well as `right` and `bottom`.
