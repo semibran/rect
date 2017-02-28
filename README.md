@@ -15,7 +15,6 @@ const Rect = require('rect')
 ```javascript
 Rect(left, top, width*, height*) // => Object{ left, top, width, height }
 ```
-
 If `width` and `height` are not provided, the factory will instead take the form of `Rect(width, height)` and `left` and `top` will default to `0`.
 
 ### Methods
@@ -24,8 +23,13 @@ If `width` and `height` are not provided, the factory will instead take the form
 ```javascript
 Rect.intersects(a, b) // => Boolean
 ```
+Determines if the given rectangles `a` and `b` are intersecting.
 
-Determines if the given rectangles are intersecting.
+#### `merge`
+```javascript
+Rect.merge(...rects)
+```
+Finds the smallest possible rectangle that can fit all the provided `rects`
 
 ### Properties
 For convenience, each `Rect` instance has its own `get` and `set` fields for the properties `x` and `y` (for getting and setting the rectangle center) as well as `right` and `bottom`.
