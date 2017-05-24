@@ -1,10 +1,14 @@
 {
   "name": "rect",
-  "version": "0.3.4",
-  "description": "Generic rectangle factory",
+  "version": "0.1.0",
+  "description": "Basic helper methods for rectangles",
+  "keywords": [
+    "rect",
+		"rectangle"
+  ],
+  "main": "rect.js",
   "license": "MIT",
-  "author": "Brandon Semilla <semibran@gmail.com>",
-  "main": "lib",
+  "author": "Brandon Semilla (https://github.com/semibran)",
   "repository": {
     "type": "git",
     "url": "https://github.com/semibran/rect.git"
