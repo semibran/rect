@@ -1,10 +1,10 @@
 exports.contains = contains
 exports.equals = equals
 
-function contains(rect, position) {
-	return position.x >= rect.x && position.y >= rect.y && position.x < rect.x + rect.width && position.y < rect.y + rect.height
+function contains(a, b) {
+	return a.x < b.x + b.width && a.y < b.y + b.height && a.x + a.width > b.x && a.y + a.height > b.y
 }
 
-function equals(rect, other) {
-	return rect.x === other.x && rect.y === other.y && rect.width === other.width && rect.height === other.height
+function equals(a, b) {
+	return a.x === b.x && a.y === b.y && a.width === b.width && a.height === b.height
 }

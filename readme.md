@@ -13,8 +13,8 @@ npm install semibran/rect
 const { contains, intersects } = require('rect')
 ```
 
-### `contains(rect, position)`
-Determines if `rect` contains `position` (i.e. an object with the properties `x` and `y`).
+### `contains(a, b)`
+Determines if rectangle `a` contains rectangle `b`.
 
 ### `equals(a, b)`
 Determines if the four rectangle properties of `a` and `b` are equivalent.
